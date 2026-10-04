@@ -1198,7 +1198,28 @@ a {
   /* NAV */
 
   .nav {
-    padding: 16px 20px;
+    justify-content: center;
+    padding: 12px 8px;
+    gap: 8px;
+  }
+
+  .logo {
+    gap: 5px;
+  }
+
+  .logo-script {
+    font-size: 27px;
+  }
+
+  .logo-caps {
+    font-size: 9px;
+    letter-spacing: 1px;
+  }
+
+  .nav-links {
+    gap: 10px;
+    font-size: 9px;
+    letter-spacing: 0.5px;
   }
  
   .logo {
