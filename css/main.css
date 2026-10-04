@@ -27,6 +27,15 @@
   box-sizing: border-box;
 }
 
+html, body {
+  overflow-x: hidden;
+}
+
+img, video {
+  max-width: 100%;
+  height: auto;
+}
+
 body {
   margin: 0;
   font-family: 'Cinzel', serif;
@@ -671,6 +680,7 @@ a {
   color: var(--gold);
   font-size: 13px;
   letter-spacing: 2px;
+  min-width: 0;
 }
 
 /*
@@ -1399,9 +1409,14 @@ a {
   }
 
   .contact-intro {
-    font-size: 15px;
-    line-height: 1.7;
-    margin-bottom: 30px;
+    font-size: 13px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    max-width: 100%;
+  }
+
+  .contact-map {
+    aspect-ratio: 16 / 5;
   }
 
   .contact-details {
