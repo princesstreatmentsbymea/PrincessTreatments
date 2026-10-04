@@ -144,3 +144,24 @@ if (lightbox && lightboxImg && lightboxClose && photoItems.length) {
     }
   });
 }
+
+const mapContainer = document.getElementById('map-container');
+const mapLoadButton = document.getElementById('map-load-button');
+
+if (mapContainer && mapLoadButton) {
+  mapLoadButton.addEventListener('click', () => {
+    const src = mapContainer.dataset.mapSrc;
+
+    if (!src) return;
+
+    const iframe = document.createElement('iframe');
+
+    iframe.src = src;
+    iframe.loading = 'lazy';
+    iframe.referrerPolicy = 'no-referrer-when-downgrade';
+    iframe.allowFullscreen = true;
+
+    mapContainer.innerHTML = '';
+    mapContainer.appendChild(iframe);
+  });
+}
