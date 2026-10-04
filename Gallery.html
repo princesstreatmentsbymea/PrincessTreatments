@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="/assets/imgs/Princess-Treatments-Icon-rounded.png">
+  <title>Gallery | Princess Treatments</title>
+
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body class="gallery-page">
+
+<nav class="nav">
+    <div class="logo">
+      <span class="logo-script">Princess</span>
+      <span class="logo-caps">TREATMENTS</span>
+    </div>
+    <input type="checkbox" id="nav-toggle" class="nav-toggle-checkbox">
+    <label for="nav-toggle" class="nav-toggle-label" aria-label="Toggle menu">&#9776;</label>
+    <ul class="nav-links">
+      <li><a href="Home.html">HOME</a></li>
+      <li><a href="Services.html">SERVICES</a></li>
+      <li><a href="Gallery.html">GALLERY</a></li>
+      <li><a href="About.html">ABOUT</a></li>
+      <li><a href="Contact.html">CONTACT</a></li>
+    </ul>
+  </nav>
+
+<header class="page-header">
+  <span class="script">Our </span>
+  <span class="caps">GALLERY</span>
+</header>
+
+<div class="filter-tabs">
+  <button class="filter-tab active" data-filter="all">ALL</button>
+  <button class="filter-tab" data-filter="waxing">WAXING</button>
+  <button class="filter-tab" data-filter="tinting">TINTING</button>
+  <button class="filter-tab" data-filter="nails">NAILS</button>
+  <button class="filter-tab" data-filter="feet">FEET</button>
+</div>
+
+<div class="photo-grid">
+    <div class="photo-item" data-category="nails">
+      <img src="/assets/imgs/webNails (1).jpg" alt="Nails">
+    </div>
+    <div class="photo-item" data-category="nails">
+      <img src="/assets/imgs/webNails (2).jpg" alt="Nails">
+    </div>
+    <div class="photo-item">
+      <img src="/assets/imgs/flowerWall.jpg" alt="Salon">
+    </div>
+    <div class="photo-item">
+      <img src="/assets/imgs/room1.jpg" alt="Salon">
+    </div>
+    <div class="photo-item">
+      <img src="/assets/imgs/room2.jpg" alt="Salon">
+    </div>
+    <div class="photo-item">
+      <video src="/assets/imgs/roomVid.mp4"></video>
+    </div>
+</div>
+
+<div class="load-more-wrap">
+  <button class="load-more-button">LOAD MORE</button>
+</div>
+
+<div class="lightbox" id="lightbox">
+  <button class="lightbox-close" id="lightbox-close" aria-label="Close">&times;</button>
+  <img src="" alt="" id="lightbox-img">
+  <video id="lightbox-video" controls style="display:none; max-width:90vw; max-height:85vh; border-radius:8px;"></video>
+</div>
+
+<script src="js/main.js"></script>
+</body>
+
+</html>
