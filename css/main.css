@@ -519,7 +519,7 @@ a {
 .review-stars {
   margin-bottom: 18px;
   color: var(--gold);
-  font-size: 17px;
+  font-size: 25px;
   letter-spacing: 3px;
 }
 
@@ -1429,6 +1429,58 @@ a {
     margin: 18px 0 25px;
   }
 
+  .reviews {
+    padding: 45px 18px;
+  }
+
+  .reviews-heading .script {
+    font-size: 36px;
+    margin-bottom: 5px;
+  }
+
+  .reviews-heading .caps {
+    font-size: 15px;
+    letter-spacing: 2px;
+  }
+
+  .reviews-grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+    max-width: 420px;
+    margin: 28px auto 0;
+  }
+
+  .review-card {
+    padding: 25px 20px;
+    border: 1px solid rgba(168, 134, 63, 0.25);
+    border-radius: 10px;
+  }
+
+  .review-stars {
+    font-size: 21px;
+    margin-bottom: 14px;
+  }
+
+  .review-text {
+    font-size: 14px;
+    line-height: 1.7;
+    margin-bottom: 18px;
+  }
+
+  .review-name {
+    font-size: 11px;
+    letter-spacing: 1px;
+  }
+
+  .review-source {
+    display: inline-block;
+    font-size: 10px;
+    padding: 5px 0;
+  }
+
+  .review-button-wrap {
+    margin-top: 28px;
+  }
 
   /* BOOKING CTA */
   .booking-cta {
